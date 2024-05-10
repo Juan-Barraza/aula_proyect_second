@@ -1,6 +1,6 @@
 package Restaurant;
 
-public class Customer {
+public class Customer { amaya
     
     private int id;
     private String name, phone, email;
