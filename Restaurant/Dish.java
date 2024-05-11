@@ -7,24 +7,15 @@ public class Dish {
     private Ingredient[] ingredients;
     private Order[] orders;
 
-
     public Dish(int id, String name, String description, String status, float price, Ingredient[] ingredients, Order[] orders) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.status = status;
         this.price = price;
-        this.ingredients = ingredients;   
+        this.ingredients = ingredients;
         this.orders = orders;
     }
-    public enum Status{
-        RECEIVED_IN_KITCHEN,
-        ON_GOING,
-        PREPARING,
-        SERVED_ON_DISH,
-        DELIVERED;
-        
-        }
 
     public int getId() {
         return id;
@@ -69,6 +60,4 @@ public class Dish {
     public void setStatus(String status) {
         this.status = status;
     }
-
-
 }

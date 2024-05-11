@@ -1,6 +1,6 @@
 package Restaurant;
 
-public class Customer { amaya
+public class Customer {
     
     private int id;
     private String name, phone, email;
@@ -13,10 +13,6 @@ public class Customer { amaya
         this.email = email;
         this.order = order;
     }
-
-
-
-
 
     public int getId() {
         return id;
@@ -48,39 +44,4 @@ public class Customer { amaya
     public void setOrder(Order order) {
         this.order = order;
     }
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
