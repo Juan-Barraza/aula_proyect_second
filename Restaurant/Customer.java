@@ -14,10 +14,6 @@ public class Customer {
         this.order = order;
     }
 
-
-
-
-
     public int getId() {
         return id;
     }
@@ -48,39 +44,4 @@ public class Customer {
     public void setOrder(Order order) {
         this.order = order;
     }
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
