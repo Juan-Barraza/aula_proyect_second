@@ -4,17 +4,15 @@ public class Customer {
     
     private int id;
     private String name, phone, email;
-    private Order order;
+    private Order[] orders;
 
-    public Customer(int id, String name, String phone, String email, Order order) {
+    public Customer(int id, String name, String phone, String email, Order[] orders) {
         this.id = id;
         this.name = name;
         this.phone = phone;
         this.email = email;
-        this.order = order;
+        this.orders = orders;
     }
-
-
 
 
 
@@ -42,44 +40,12 @@ public class Customer {
     public void setEmail(String email) {
         this.email = email;
     }
-    public Order getOrder() {
-        return order;
+    public Order[] getOrders() {
+        return orders;
     }
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setOrder(Order[] orders) {
+        this.orders = orders;
     }
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

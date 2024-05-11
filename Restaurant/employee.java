@@ -1,11 +1,11 @@
 package Restaurant;
 
-public class employee {
+public class Employee {
     private int id;
     private String name, role, status;
     private Order[] orders;
 
-    public employee(int id, String name, String role, String status, Order[] orders) {
+    public Employee(int id, String name, String role, String status, Order[] orders) {
         this.id = id;
         this.name = name;
         this.role = role;

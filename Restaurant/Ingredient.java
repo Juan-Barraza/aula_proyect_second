@@ -3,14 +3,12 @@ package Restaurant;
 public class Ingredient {
     private int id;
     private String name, description;
-    private Dish[] dishes;
 
 
-    public Ingredient(int id, String name, String description, Dish[] dishes) {
+    public Ingredient(int id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.dishes = dishes;
     }
 
 
@@ -31,12 +29,6 @@ public class Ingredient {
     }
     public void setDescription(String description) {
         this.description = description;
-    }
-    public Dish[] getDishes() {
-        return dishes;
-    }
-    public void setDishes(Dish[] dishes) {
-        this.dishes = dishes;
     }
 
 }

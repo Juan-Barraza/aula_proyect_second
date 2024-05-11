@@ -4,20 +4,19 @@ public class Order {
     private int id;
     private String DateTime;
     private float total;
-    private int tableId, employeeId;
-    private Customer[] customers;
-    private Dish[] dishes;
+    private Table table;
+    private Employee employee;
+    private Customer customer;
 
-    public Order(int id, String DateTime, float total, int tableId, int employeeId, Customer[] customers, Dish[] dishes) {
+
+    public Order(int id, String DateTime, float total, Table table, Employee employee, Customer customer) {
         this.id = id;
         this.DateTime = DateTime;
         this.total = total;
-        this.tableId = tableId;
-        this.employeeId = employeeId;
-        this.customers = customers;
-        this.dishes = dishes;
+        this.table = table;
+        this.employee = employee;
+        this.customer = customer;
     }
-
 
 
 
@@ -39,31 +38,23 @@ public class Order {
     public void settotal(float total) {
         this.total = total;
     }
-    public int gettableId() {
-        return tableId;
+    public Table getTable() {
+        return table;
     }
-    public void settableId(int tableId) {
-        this.tableId = tableId;
+    public void settable(Table table) {
+        this.table = table;
     }
-    public int getemployeeId() {
-        return employeeId;
+    public Employee getEmployee() {
+        return employee;
     }
-    public void setemployeeId(int employeeId) {
-        this.employeeId = employeeId;
+    public void setemployeeId(Employee employee) {
+        this.employee = employee;
     }
-    public Customer[] getCustomers() {
-        return customers;
+    public Customer getCustomers() {
+        return customer;
     }
-    public void setCustomers(Customer[] customers) {
-        this.customers = customers;
+    public void setCustomers(Customer customer) {
+        this.customer = customer;
     }
-    public Dish[] getDishes() {
-        return dishes;
-    }
-    public void setDishes(Dish[] dishes) {
-        this.dishes = dishes;
-    }
-
-
     
 }

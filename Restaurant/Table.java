@@ -4,13 +4,13 @@ public class Table {
     private int number;
     private int capacity;
     private String status;
-    private Order order;
+    private Order[] orders;
 
-    public Table(int number, int capacity, String status, Order order) {
+    public Table(int number, int capacity, String status, Order[] orders) {
         this.number = number;
         this.capacity = capacity;
         this.status = status;
-        this.order = order;
+        this.orders = orders;
     }
 
 
@@ -34,16 +34,14 @@ public class Table {
     public void setStatus(String status) {
         this.status = status;
     }
-    public Order getOrder() {
-        return order;
+    public Order[] getOrder() {
+        return orders;
     }
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setOrder(Order[] orders) {
+        this.orders = orders;
     }
 
     
-
-
 
 
 }
