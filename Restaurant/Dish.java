@@ -6,14 +6,16 @@ public class Dish {
     private String name, description;
     private float price;
     private Menu menu;
+    private Status.Dish dish;
 
 
-    public Dish(int id, String name, String description, String status, float price, Menu menu) {
+    public Dish(int id, String name, String description, Status.Dish dish, float price, Menu menu) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.menu = menu;
+        this. dish=dish;
     }
 
     public int getId() {
@@ -47,6 +49,15 @@ public class Dish {
     public void setMenu(Menu menu) {
         this.menu = menu;
     }
+
+    public Status.Dish getDish() {
+        return dish;
+    }
+
+    public void setDish(Status.Dish dish) {
+        this.dish = dish;
+    }
+    
     
 
 

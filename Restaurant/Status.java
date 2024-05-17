@@ -8,6 +8,20 @@ package Restaurant;
     DELIVERED;
     
     }*/
+
+public class Status{
     
-public class Process {
+    public enum Employee{
+    
+
+
+    }
+    
+    public enum Dish{
+
+    }
+    
+    public enum Table{
+
+    }
 }
