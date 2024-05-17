@@ -3,26 +3,26 @@ package Restaurant;
 public class Employee {
     private int id;
     private String name, role;
-    private Status.Employee employee; // Cambiado de Status.Employeed a Status.Employee
+    private Status.Employee employee; 
     private Order[] orders;
 
-    public Employee(int id, String name, String role, Status.Employee employee, Order[] orders) {
-        this.id = id;
-        this.name = name;
-        this.role = role;
-        this.employee = employee; // Cambiado de employeed a employee
-        this.orders = orders;
-    }
+public Employee(int id, String name, String role, Status.Employee employee, Order[] orders) {
+this.id = id;
+this.name = name;
+this.role = role;
+this.employee = employee; 
+this.orders = orders;
+}
 
-    public int getId() {
-        return id;
-    }
+public int getId() {
+return id;
+}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+public void setId(int id) {
+this.id = id;
+}
 
-    public String getName() {
+public String getName() {
         return name;
     }
 
@@ -38,13 +38,7 @@ public class Employee {
         this.role = role;
     }
 
-    public Status.Employee getStatus() { // Cambiado de getStatus.Employeed a getStatus
-        return employee; // Cambiado de status a employee
-    }
 
-    public void setStatus(Status.Employee employee) { // Cambiado de setStatus.Employeed a setStatus
-        this.employee = employee; // Cambiado de status a employee
-    }
 
     public Order[] getOrders() {
         return orders;
@@ -52,5 +46,13 @@ public class Employee {
 
     public void setOrders(Order[] orders) {
         this.orders = orders;
+    }
+
+    public Status.Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Status.Employee employee) {
+        this.employee = employee;
     }
 }

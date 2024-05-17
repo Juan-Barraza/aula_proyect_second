@@ -1,27 +1,20 @@
 package Restaurant;
 
-/*public enum Process{
-    RECEIVED_IN_KITCHEN,
-    ON_GOING,
-    PREPARING,
-    SERVED_ON_DISH,
-    DELIVERED;
-    
-    }*/
-
 public class Status{
-    
-    public enum Employee{
-    
 
+public enum Employee{
+Available,
+Busy;
 
-    }
-    
-    public enum Dish{
+}
+public enum Dish{
+Earring,
+Prepared,
+Served;
 
-    }
-    
-    public enum Table{
-
-    }
+}
+public enum Table{
+Free,
+Busy;
+}
 }

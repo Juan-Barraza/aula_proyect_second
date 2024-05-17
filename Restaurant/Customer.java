@@ -14,8 +14,6 @@ this.email = email;
 this.orders = orders;
 }
 
-
-
 public int getId() {
 return id;
 }
@@ -46,7 +44,4 @@ return orders;
 public void setOrder(Order[] orders) {
 this.orders = orders;
 }
-
-
-
 }
