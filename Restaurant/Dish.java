@@ -6,17 +6,17 @@ private int id;
 private String name, description;
 private float price;
 private Menu menu;
-private Status.Dish dish;
+private Process processes;
 
 
 
-public Dish(int id, String name, String description, Status.Dish dish, float price, Menu menu) {
+public Dish(int id, String name, String description, Process processes, float price, Menu menu) {
 this.id = id;
 this.name = name;
 this.description = description;
 this.price = price;
 this.menu = menu;
-this.dish=dish;
+this.processes = processes;
 
 }
 
@@ -52,11 +52,13 @@ public void setMenu(Menu menu) {
 this.menu = menu;
 }
 
-public Status.Dish getDish() {
-return dish;
+public Process getProcesses() {
+    return processes;
 }
 
-public void setDish(Status.Dish dish) {
-this.dish = dish;
+public void setProcesses(Process processes) {
+    this.processes = processes;
 }
+
+
 }
