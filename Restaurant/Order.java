@@ -44,10 +44,10 @@ public class Order {
     public void settable(Table table) {
         this.table = table;
     }
-    public Employee getEmployee() {
+    public Employee getEmployeed() {
         return employee;
     }
-    public void setemployeeId(Employee employee) {
+    public void setemployeedId(Employee employee) {
         this.employee = employee;
     }
     public Customer getCustomers() {
