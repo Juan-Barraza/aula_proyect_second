@@ -2,12 +2,12 @@ package Restaurant;
 
 public class Menu {
     private int id;
-    private String namee;
+    private String name;
     private Dish[] dishes;
 
-    public Menu(int id, String namee, Dish[] dishes) {
+    public Menu(int id, String name, Dish[] dishes) {
         this.id = id;
-        this.namee = namee;
+        this.name = name;
         this.dishes = dishes;
     }
 
@@ -19,11 +19,11 @@ public class Menu {
     public void setID(int id) {
         this.id = id;
     }
-    public String getNamee() {
-        return namee;
+    public String getname() {
+        return name;
     }
-    public void setNamee(String namee) {
-        this.namee = namee;
+    public void setname(String name) {
+        this.name = name;
     }
     public Dish[] getDishes() {
         return dishes;
