@@ -18,6 +18,23 @@ public class Table {
     }
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 public int getNumber() {
 return number;
 }

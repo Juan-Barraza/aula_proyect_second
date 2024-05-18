@@ -14,6 +14,23 @@ this.email = email;
 this.orders = orders;
 }
 
+
+
+
+
+public void makeOrder(){
+    
+}
+
+
+
+
+
+
+
+
+
+
 public int getId() {
 return id;
 }

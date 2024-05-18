@@ -6,17 +6,15 @@ private int id;
 private String name, description;
 private float price;
 private Menu menu;
-private Process processes;
 
 
 
-public Dish(int id, String name, String description, Process processes, float price, Menu menu) {
+public Dish(int id, String name, String description, float price, Menu menu) {
 this.id = id;
 this.name = name;
 this.description = description;
 this.price = price;
 this.menu = menu;
-this.processes = processes;
 
 }
 
@@ -50,14 +48,6 @@ return menu;
 }
 public void setMenu(Menu menu) {
 this.menu = menu;
-}
-
-public Process getProcesses() {
-    return processes;
-}
-
-public void setProcesses(Process processes) {
-    this.processes = processes;
 }
 
 

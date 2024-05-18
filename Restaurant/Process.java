@@ -14,15 +14,15 @@ enum StatusProcess{
 
 public class Process {
     private int id;
-    private Dish dish;
+    private DishOrder dishOrder;
     private Employee employee;
     private StatusProcess status;
     private DateTimeFormatter dateTimeFormatter;
     Date fecha;
 
-    public Process(int id, Dish dish, Employee employee, StatusProcess status) {
+    public Process(int id, DishOrder dishOrder, Employee employee, StatusProcess status) {
         this.id = id;
-        this.dish = dish;
+        this.dishOrder = dishOrder;
         this.employee = employee;
         this.status = status;
         this.dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
@@ -48,11 +48,11 @@ public class Process {
     public void setId(int id) {
         this.id = id;
     }
-    public Dish getDish() {
-        return dish;
+    public DishOrder getDishOrder() {
+        return dishOrder;
     }
-    public void setDishes(Dish dish) {
-        this.dish = dish;
+    public void setDishes(DishOrder dishOrder) {
+        this.dishOrder = dishOrder;
     }
     public Employee getEmployee() {
         return employee;
