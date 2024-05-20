@@ -1,38 +1,54 @@
 package Restaurant;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Menu {
     private int id;
     private String name;
-    private Dish[] dishes;
+    private List<Dish> dishes;
 
-    public Menu(int id, String name, Dish[] dishes) {
+    public Menu(int id, String name) {
         this.id = id;
         this.name = name;
-        this.dishes = dishes;
+        this.dishes = new ArrayList<>();
     }
-
-
 
     public int getId() {
         return id;
     }
-    public void setID(int id) {
+
+    public void setId(int id) {
         this.id = id;
     }
-    public String getname() {
+
+    public String getName() {
         return name;
     }
-    public void setname(String name) {
+
+    public void setName(String name) {
         this.name = name;
     }
-    public Dish[] getDishes() {
+
+    public List<Dish> getDishes() {
         return dishes;
     }
-    public void setDishes(Dish[] dishes) {
-        this.dishes = dishes;
+
+    // Método para agregar un plato al menú
+    public void addDish(Dish dish) {
+        this.dishes.add(dish);
     }
 
-    
+    // Método para eliminar un plato del menú
+    public void removeDish(Dish dish) {
+        this.dishes.remove(dish);
+    }
 
-
+    // Método para listar los platos del menú
+    public void listDishes() {
+        System.out.println("Menu: " + this.name);
+        for (Dish dish : dishes) {
+            System.out.println("Dish ID: " + dish.getId() + ", Name: " + dish.getName() + ", Price: $" + dish.getPrice());
+        }
+    }
 }
