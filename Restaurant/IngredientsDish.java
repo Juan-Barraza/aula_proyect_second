@@ -12,14 +12,16 @@ class IngredientsDish {
     public Dish getDish() {
         return dish;
     }
+
     public void setDish(Dish dish) {
         this.dish = dish;
     }
+
     public Ingredient getIngredient() {
         return ingredient;
     }
+
     public void setIngredient(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
-    
 }
